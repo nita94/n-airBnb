@@ -1,0 +1,38 @@
+{
+  "name": "nick-tan-wk13-project",
+  "version": "1.0.0",
+  "description": "<!--!!START SILENT --> # AirBnB Clone <!--!!END --> <!--!!ADD --> <!-- # `<name of application here>` --> <!--!!END_ADD -->",
+  "main": "index.js",
+  "scripts": {
+    "render-postbuild": "npm run build --prefix frontend",
+    "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",
+    "dev:backend": "npm install --prefix backend start",
+    "dev:frontend": "npm install --prefix frontend start",
+    "sequelize": "npm run --prefix backend sequelize",
+    "sequelize-cli": "npm run --prefix backend sequelize-cli",
+    "start": "npm start --prefix backend",
+    "build": "npm run build --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nita94/git_NT_wk13_AuthenticateMe_Airbnb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nita94/git_NT_wk13_AuthenticateMe_Airbnb/issues"
+  },
+  "homepage": "https://github.com/nita94/git_NT_wk13_AuthenticateMe_Airbnb#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express-validator": "^7.0.1",
+    "js-cookie": "^3.0.5",
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^5.3.4",
+    "redux": "^4.2.1"
+  },
+  "devDependencies": {
+    "redux-logger": "^3.0.6"
+  }
+}

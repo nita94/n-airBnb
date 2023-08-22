@@ -1,0 +1,29 @@
+/* The modal takes up the whole screen. The display is set to flex to center its content. */
+#modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The modal background also takes up the whole screen. It has a semi-transparent black background to darken the rest of the page. */
+#modal-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* The modal content is centered thanks to the display properties of #modal. It has a white background and a solid black border. */
+#modal-content {
+  position: absolute;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 15px;
+}
