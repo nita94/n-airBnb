@@ -1,10 +1,11 @@
 // Import necessary libraries and components
-import { NavLink } from 'react-router-dom'  // Import NavLink for routing
-import { useEffect, useState } from 'react'  // Import useEffect and useState hooks
-import { useDispatch, useSelector } from 'react-redux'  // Import useDispatch and useSelector hooks
-import * as spotActions from '../../store/spots'  // Import all actions from spots
-import SpotCard from '../SpotCards'  // Import SpotCard component
-import './ManageSpots.css'  // Import the CSS styles for the manage spots page
+import { NavLink } from 'react-router-dom';  // Import NavLink for routing
+import { useEffect, useState } from 'react';  // Import useEffect and useState hooks
+import { useDispatch, useSelector } from 'react-redux';  // Import useDispatch and useSelector hooks
+import * as spotActions from '../../../store/spots';  // Import all actions from spots
+import SpotCard from '../SpotCards';  // Import SpotCard component
+import './ManageSpots.css';  // Import the CSS styles for the manage spots page
+
 
 // Define a functional component called ManageSpots
 function ManageSpots() {

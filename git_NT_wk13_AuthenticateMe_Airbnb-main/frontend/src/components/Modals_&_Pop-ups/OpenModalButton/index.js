@@ -1,7 +1,8 @@
 // Import required libraries, hooks and styles
-import React from 'react'
-import { useModal } from '../../context/Modal.js'
-import './OpenModalButton.css'
+import React from 'react';
+import { useModal } from '../../../context/Modal.js';
+import './OpenModalButton.css';
+
 
 // The OpenModalButton component
 // This component takes four props:

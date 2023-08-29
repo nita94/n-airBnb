@@ -1,13 +1,14 @@
 // Import required libraries, components and styles
 import React, { useState, useEffect, useRef } from 'react'
 import { useDispatch } from 'react-redux'
-import * as sessionActions from '../../store/session'
-import OpenModalButton from '../OpenModalButton'
-import LoginFormModal from '../LoginFormModal'
-import SignupFormModal from '../SignupFormModal'
+import * as sessionActions from '../../../store/session'
+import OpenModalButton from '../../Modals_&_Pop-ups/OpenModalButton'
+import LoginFormModal from '../../Authentication/LoginFormModal'
+import SignupFormModal from '../../Authentication/SignupFormModal'
 import './ProfileButton.css'
 import { NavLink, useHistory } from 'react-router-dom'
 import Hamburger from './Hamburger'
+
 
 // This is the main ProfileButton component
 function ProfileButton({ user }) {

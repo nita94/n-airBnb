@@ -5,13 +5,13 @@ import './DeleteConfirmModal.css';
 import React from 'react';
 
 // Import the spotActions object from the store/spots module.
-import * as spotActions from '../../store/spots';
+import * as spotActions from '../../../store/spots';
 
 // Import the useDispatch hook from react-redux.
 import { useDispatch } from 'react-redux';
 
 // Import the useModal hook from the Modal.js context file.
-import { useModal } from '../../context/Modal.js';
+import { useModal } from '../../../context/Modal.js';
 
 // The DeleteConfirmModal component takes two props:
 //   - spot: The spot that the user wants to delete.

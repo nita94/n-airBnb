@@ -1,9 +1,10 @@
 // Import required libraries, hooks and styles
-import './SpotCards.css'
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import OpenModalButton from '../OpenModalButton'
-import DeleteConfirmModal from '../DeleteConfirmModal'
+import './SpotCards.css';
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import OpenModalButton from '../../Modals_&_Pop-ups/OpenModalButton';
+import DeleteConfirmModal from '../../Modals_&_Pop-ups/DeleteConfirmModal';
+
 
 // The SpotCard component
 // This component takes three props:

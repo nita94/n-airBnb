@@ -6,56 +6,45 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Spot extends Model {
     static associate(models) {
-      Spot.belongsTo(
-        models.User,
-        { foreignKey: 'ownerId' }
-      )
-
-      Spot.hasMany(
-        models.Booking,
-        { foreignKey: 'spotId', onDelete: 'CASCADE', hooks: true }
-      )
-
-      Spot.hasMany(
-        models.Review,
-        { foreignKey: 'spotId', onDelete: 'CASCADE', hooks: true }
-      )
-
-      Spot.hasMany(
-        models.SpotImage,
-        { foreignKey: 'spotId', onDelete: 'CASCADE', hooks: true }
-      )
+      // A spot is owned by a user
+      Spot.belongsTo(models.User, { foreignKey: 'ownerId' });
+      
+      // A spot can have multiple bookings
+      Spot.hasMany(models.Booking, { foreignKey: 'spotId', onDelete: 'CASCADE', hooks: true });
+      
+      // A spot can have multiple reviews
+      Spot.hasMany(models.Review, { foreignKey: 'spotId', onDelete: 'CASCADE', hooks: true });
+      
+      // A spot can have multiple images
+      Spot.hasMany(models.SpotImage, { foreignKey: 'spotId', onDelete: 'CASCADE', hooks: true });
     }
   }
 
   Spot.init({
+    // Owner of the spot
     ownerId: {
       type: DataTypes.INTEGER
     },
-    address: {
-      type: DataTypes.STRING
-    },
-    city: {
-      type: DataTypes.STRING
-    },
-    state: {
-      type: DataTypes.STRING
-    },
-    country: {
-      type: DataTypes.STRING
-    },
-    lat: {
-      type: DataTypes.DECIMAL
-    },
-    lng: {
-      type: DataTypes.DECIMAL
-    },
+    
+    // Address details
+    address: { type: DataTypes.STRING },
+    city: { type: DataTypes.STRING },
+    state: { type: DataTypes.STRING },
+    country: { type: DataTypes.STRING },
+    
+    // Geolocation coordinates
+    lat: { type: DataTypes.DECIMAL },
+    lng: { type: DataTypes.DECIMAL },
+    
+    // Name of the spot with length validation
     name: {
       type: DataTypes.STRING,
       validate: {
-        len: [4,50]
+        len: [4, 50]
       }
     },
+    
+    // Description of the spot with length validation and requirement
     description: {
       type: DataTypes.STRING,
       validate: {
@@ -69,6 +58,8 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
+    
+    // Price per night for the spot
     price: {
       type: DataTypes.DECIMAL
     }

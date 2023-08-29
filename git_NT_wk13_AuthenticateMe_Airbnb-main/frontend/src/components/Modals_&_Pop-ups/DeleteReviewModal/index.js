@@ -3,11 +3,11 @@ import './DeleteReviewModal.css';
 // Importing React library
 import React from 'react';
 // Importing review actions from the review store
-import * as reviewActions from '../../store/reviews';
+import * as reviewActions from '../../../store/reviews';
 // Importing useDispatch hook from react-redux for dispatching actions
 import { useDispatch } from 'react-redux';
 // Importing useModal custom hook from context for handling modal operations
-import { useModal } from '../../context/Modal.js';
+import { useModal } from '../../../context/Modal.js';
 
 // Defining the DeleteReviewModal functional component
 // It receives review and props as arguments

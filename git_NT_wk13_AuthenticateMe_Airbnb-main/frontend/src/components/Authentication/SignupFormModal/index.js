@@ -1,8 +1,8 @@
 // Import necessary hooks and actions
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useModal } from '../../context/Modal.js';
-import * as sessionActions from '../../store/session';
+import { useModal } from '../../../context/Modal.js';
+import * as sessionActions from '../../../store/session.js';
 import './SignupForm.css';
 
 function SignupFormModal() {

@@ -1,8 +1,8 @@
 import './CreateSpotForm.css'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import * as spotActions from '../../store/spots'
-import * as spotImgActions from '../../store/spotimages'
+import * as spotActions from '../../../store/spots'
+import * as spotImgActions from '../../../store/spotimages'
 import { useHistory } from 'react-router-dom'
 
 // Define a functional component called CreateSpotForm

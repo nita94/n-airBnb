@@ -1,8 +1,8 @@
 // Import necessary libraries and components
 import React, { useState } from 'react'
-import * as sessionActions from '../../store/session'  // Import all actions from session
+import * as sessionActions from '../../../store/session'  // Import all actions from session
 import { useDispatch } from 'react-redux'  // Import the useDispatch hook from react-redux
-import { useModal } from '../../context/Modal.js'  // Import the useModal hook from the Modal context
+import { useModal } from '../../../context/Modal.js'  // Import the useModal hook from the Modal context
 import './LoginForm.css'  // Import the CSS styles for the login form
 
 // Define a functional component called LoginFormModal

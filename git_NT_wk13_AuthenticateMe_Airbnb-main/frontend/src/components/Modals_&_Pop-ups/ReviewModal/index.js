@@ -1,8 +1,9 @@
-import './ReviewModal.css'
-import React, { useState } from 'react'
-import * as reviewActions from '../../store/reviews'
-import { useDispatch } from 'react-redux'
-import { useModal } from '../../context/Modal.js'
+import './ReviewModal.css';
+import React, { useState } from 'react';
+import * as reviewActions from '../../../store/reviews';
+import { useDispatch } from 'react-redux';
+import { useModal } from '../../../context/Modal.js';
+
 
 
 function ReviewModal({ spotId }) {

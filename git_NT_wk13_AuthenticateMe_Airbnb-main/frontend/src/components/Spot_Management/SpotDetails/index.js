@@ -1,12 +1,13 @@
 import { useParams } from 'react-router-dom'
-import * as spotActions from '../../store/spots.js'
-import * as reviewActions from '../../store/reviews'
+import * as spotActions from '../../../store/spots.js'
+import * as reviewActions from '../../../store/reviews.js'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import './SpotDetails.css'
-import OpenModalButton from '../OpenModalButton'
-import ReviewModal from '../ReviewModal/index.js'
-import DeleteReviewModal from '../DeleteReviewModal/index.js'
+import OpenModalButton from '../../Modals_&_Pop-ups/OpenModalButton/index.js'
+import ReviewModal from '../../Modals_&_Pop-ups/ReviewModal/index.js'
+import DeleteReviewModal from '../../Modals_&_Pop-ups/DeleteReviewModal/index.js'
+
 
 function SpotDetails() {
     const { spotId } = useParams()

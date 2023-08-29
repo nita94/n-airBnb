@@ -1,8 +1,9 @@
-import * as spotActions from '../../store/spots.js'; // Importing actions related to spots
+import * as spotActions from '../../../store/spots.js';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './LandingPage.css';
-import SpotCard from '../SpotCards/index.js'; // Importing the SpotCard component
+import SpotCard from '../../Spot_Management/SpotCards/index.js';
+// Importing the SpotCard component
 
 function LandingPage() {
     const dispatch = useDispatch(); // Redux dispatch function to trigger actions

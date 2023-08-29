@@ -1,7 +1,7 @@
 import './EditForm.css'
 import { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import * as spotActions from '../../store/spots'
+import * as spotActions from '../../../store/spots'
 import { useHistory, useParams } from 'react-router-dom'
 
 function EditForm() {
